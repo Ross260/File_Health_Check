@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#db5248"          # Ton bleu de titre
+backgroundColor = "#1f2222"       # Blanc pur
+secondaryBackgroundColor = "#4a65af" # Gris très clair pour la barre latérale
+textColor = "#ffffff"             # Noir/Gris foncé pour le texte
+base = "light"                    # Force le thème clair
