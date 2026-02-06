@@ -1,3 +1,13 @@
+---
+title: titre de ton projet
+emoji: 📊
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+app_port: 7860
+---
+
 # 🏥 File Health Check
 
 **File Health Check** est une application interactive développée avec **Streamlit** permettant d'analyser instantanément la qualité et la santé de vos jeux de données (CSV ou Google Sheets). L'outil génère un diagnostic complet incluant la complétude, la détection de doublons et les corrélations entre variables.
