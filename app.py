@@ -262,9 +262,9 @@ def run_visualizations(df):
             
             st.plotly_chart(fig_corr, use_container_width=True)
             st.info("""
-                💡 **Lecture du graphique :** * **1.0 (Bleu foncé) :** Corrélation parfaite (ex: une variable avec elle-même).  
+                💡 **Lecture du graphique :** * **1.0 (Rouge foncé) :** Corrélation parfaite (ex: une variable avec elle-même).  
                 * **0 :** Aucune relation entre les deux variables.  
-                * **-1.0 (Rouge foncé) :** Relation inverse (quand l'une monte, l'autre descend).
+                * **-1.0 (Bleu foncé) :** Relation inverse (quand l'une monte, l'autre descend).
             """)
         else:
             st.warning("Il faut au moins deux colonnes numériques pour calculer des corrélations.")
