@@ -15,6 +15,6 @@ COPY . .
 # EXPOSE 8501
 
 # Commande de lancement dynamique
-CMD ["sh", "-c", "streamlit run app.py --server.port=${PORT:-7860} --server.address=0.0.0.0"]
+CMD ["sh", "-c", "streamlit run app.py --server.port=${PORT:-7860} --server.address=0.0.0.0 --server.enableCORS=false --server.enableXsrfProtection=false"]
 
 # si le port par défaut existe, l'utiliser sinon utiliser le port 7860 (adaptation pour Hugging Face Spaces)
