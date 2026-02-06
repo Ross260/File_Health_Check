@@ -12,7 +12,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Port exposé (Streamlit utilise 8501 par défaut)
-EXPOSE 8501
+# EXPOSE 8501
 
-# Commande de lancement
-CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+# Commande de lancement dynamique
+CMD ["sh", "-c", "streamlit run app.py --server.port=${PORT:-7860} --server.address=0.0.0.0"]
+
+# si le port par défaut existe, l'utiliser sinon utiliser le port 7860 (adaptation pour Hugging Face Spaces)

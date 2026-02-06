@@ -119,9 +119,8 @@ def run_health_check(df):
     total_missing = df.isnull().sum().sum()
     completeness = ((total_cells - total_missing) / total_cells) * 100
 
-        # 100% : Le dataset est parfait, il n'y a aucun trou.
-        # 90% : 1 cellule sur 10 est vide. C'est acceptable.
-        # 50% : Ton tableau est une "passoire". La moitié des informations sont manquantes. Une analyse statistique sur ce genre de données est très risquée car elle ne représente que la moitié de la réalité.
+    # 100% : Le dataset est parfait, il n'y a aucun trou.
+    # 90% : 1 cellule sur 10 est vide. C'est acceptable.
 
     # Nombre de colonnes ayant plus de 10% de vide
     #missing_pct_per_col = (df.isnull().sum() / len(df)) * 100
@@ -145,7 +144,7 @@ def run_health_check(df):
     elif 85 <= completeness < 95:
         st.write(f":orange[Complétude : {completeness:.1f}% : Acceptable, mais nécessite une investigation sur les colonnes vides.]")
     else:
-        st.write(f":red[Complétude : {completeness:.1f}% : Critique. Nécéssite un nettoyage complet ou un revue du processus de collecte.]")
+        st.write(f":red[Complétude : {completeness:.1f}% : Critique. Nécéssite un nettoyage complet ou une revue du processus de collecte.]")
 
     # 2. Analyse des valeurs manquantes
     st.write("")
