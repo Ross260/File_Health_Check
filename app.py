@@ -200,7 +200,7 @@ def run_visualizations(df):
     tab1, tab2, tab3 = st.tabs(["Qualité de Remplissage","Distribution & Outliers",  "Corrélations"])
 
     with tab1:
-        st.subheader("Qualité de remplissage par variable")
+        st.subheader("Qualité de remplissage")
         
         # Calcul du taux de présence par colonne
         completeness_per_col = (df.notnull().mean() * 100).reset_index()
