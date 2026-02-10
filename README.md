@@ -32,8 +32,8 @@ app_port: 7860
 
 1. **Clonez le dépôt :**
 ```bash
-git clone https://github.com/votre-utilisateur/file_health_check.git
-cd file_health_check
+git clone https://github.com/Ross260/File_Health_Check.git
+cd File_Health_Check
 
 ```
 

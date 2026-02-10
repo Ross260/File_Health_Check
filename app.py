@@ -46,7 +46,7 @@ def main():
             <h1 class="main-title">
                 <span class="pulse">🏥</span> File Health Check
             </h1>
-            <p class="sub-title">Diagnostic & Visualisation de la Qualité de vos Données</p>
+            <p class="sub-title">Diagnostic et visualisation de la qualité de vos datasets</p>
         </div>
     """, unsafe_allow_html=True)
 
